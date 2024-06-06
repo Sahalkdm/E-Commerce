@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input, textarea, select{
+    @apply border-2 border-gray-200 rounded-sm px-1 py-1 w-full;
+    @apply mb-2;
+    @apply shadow-md;
+}
+input:focus{
+    @apply border border-blue-500 ;
+}
+h1{
+    @apply text-blue-900 mb-2 text-xl font-medium;
+}
+label{
+    @apply text-blue-900 font-normal;
+}
+.btn-primary{
+    @apply text-white bg-blue-900 px-4 py-1 rounded-md;
+    @apply shadow-md
+}
+.btn-danger{
+    @apply text-white bg-red-700 px-4 py-1 rounded-md;
+    @apply shadow-md
+}
+.btn-danger:hover{
+    @apply bg-red-600 transition ease-in-out delay-100 scale-105;
+}
+.btn-primary:hover{
+    @apply bg-blue-800 transition ease-in-out delay-100 scale-105;
+}
+table.basic{
+    @apply w-full bg-white rounded-sm shadow-md;
+}
+table.basic thead tr td,
+table.basic thead tr th
+{
+    @apply text-sm text-gray-600 uppercase border-b border-gray-200 px-4 py-2;
+}
+table.basic tr td{
+    @apply px-4 py-1;
+}
+table.basic a{
+    @apply px-4 rounded-sm inline-flex mx-1 items-center gap-1 text-sm py-1;
+}
+.btn-default, .btn-red{
+    @apply px-4 py-1 rounded-md;
+}
+.btn-red{
+    @apply bg-red-500 text-white px-4 py-1 rounded-sm shadow-sm;
+}
+.btn-default{
+    @apply bg-white text-gray-800 px-4 py-1 rounded-sm border-2 border-gray-200 shadow-sm;
+}
